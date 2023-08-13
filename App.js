@@ -1,20 +1,32 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+
+import AsyncStorageExample from './components/AsyncStorageExample'; 
+import AnimatedStyleUpdateExample from './components/AnimatedStyleUpdateExample'; 
+import CameraExample from './components/CameraExample'; 
+import DeviceMotionExample from './components/DeviceMotionExample'; 
+import ImagePickerExample from './components/ImagePickerExample'; 
+import LocationExample from './components/LocationExample'; 
+import MapViewExample from './components/MapViewExample'; 
+import NotificationExample from './components/NotificationExample'; 
+import SvgExample from './components/SvgExample'; 
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+        <AsyncStorageExample />
       <StatusBar style="auto" />
     </View>
   );
 }
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#ffffff',
+    //alignItems: 'center',
   },
 });
+
